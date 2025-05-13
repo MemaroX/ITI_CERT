@@ -1,0 +1,33 @@
+namespace ConsoleApp1
+{
+    internal class Task1
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter the first number: ");
+            int n1 = int.Parse(Console.ReadLine());
+
+            Console.Write("Enter the second number: ");
+            int n2 = int.Parse(Console.ReadLine());
+
+            Console.Write("Enter the third number: ");
+            int n3 = int.Parse(Console.ReadLine());
+
+            #region Conditions
+            bool allEqual = (n1 == n2) && (n2 == n3);
+            bool allDifferent = (n1 != n2) && (n2 != n3) && (n1 != n3);
+            bool firstIsLargest = (n1 > n2) && (n1 > n3);
+            bool secondIsSmallest = (n2 < n1) && (n2 < n3);
+            bool isSumGreaterThanProduct = (n1 + n2 + n3) > (n1 * n2 * n3);
+            #endregion
+
+            
+            Console.WriteLine($"All numbers are equal: {allEqual}");
+            Console.WriteLine($"All numbers are different: {allDifferent}");
+            Console.WriteLine($"The first number is the largest: {firstIsLargest}");
+            Console.WriteLine($"The second number is the smallest: {secondIsSmallest}");
+            Console.WriteLine($"The sum of the numbers is greater than their product: {isSumGreaterThanProduct}");
+        }
+    }
+}
+s

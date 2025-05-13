@@ -1,0 +1,18 @@
+namespace ConsoleApp1
+{
+    internal class Task3
+    {
+        static void Main(string[] args)
+        {
+            int x = int.Parse(Console.ReadLine());
+
+            Console.WriteLine(x);
+
+            int z = (x++) + x;
+
+            Console.WriteLine(x);
+
+            Console.WriteLine(z);
+        }
+    }
+}

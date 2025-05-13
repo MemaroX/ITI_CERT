@@ -1,0 +1,31 @@
+namespace ConsoleApp1
+{
+    internal class Task1
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter 6 Numbers :");
+            float num1 = float.Parse(Console.ReadLine());
+            float num2 = float.Parse(Console.ReadLine());
+            float num3 = float.Parse(Console.ReadLine());
+            float num4 = float.Parse(Console.ReadLine());
+            float num5 = float.Parse(Console.ReadLine());
+            float num6 = float.Parse(Console.ReadLine());
+
+            float eq1;
+            float eq2;
+            float eq3;
+            float eq4;
+
+            eq1 = -1 + (num4 * 5);
+            eq2 = (35 + num5) % 7;
+            eq3 = (14 - 4 * num6 / 11);
+            eq4 = (num2 + 15 / num6 * 1 - 7 % 2);
+            Console.WriteLine("First Equation's result = " + eq1);
+            Console.WriteLine("Second Equation's result = " + eq2);
+            Console.WriteLine("Third Equation's result = " + eq3);
+            Console.WriteLine("Fourth Equation's result = " + eq4);
+
+        }
+    }
+}
